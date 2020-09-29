@@ -1,0 +1,83 @@
+
+ import java.util.Scanner;
+class Main {
+  
+  public static void main(String[] args) {
+    int n = -1;
+    int x;
+    int  maior , menor , negativos , positivos ,resp , resn ;
+    
+     Scanner ler = new Scanner(System.in);     
+   
+ 
+
+  while(n < 0)
+  {
+        System.out.println("digite a quantidade de valores ");
+        n = ler.nextInt();
+        if(n > 20)
+        {
+          System.out.println("o valor deve ser menor que 20 ");
+          n = -1;
+        }
+        int vetor[] = new int[n];
+         
+        for(x =0; x< n; x++)
+        {
+          System.out.println("digite o valor  " );
+          vetor[x] = ler.nextInt();
+        } 
+    }
+
+ maior = vetor[1];
+
+  for(x = 1; x<=10; x++)
+    {
+       if(maior < vetor[x] )
+       {
+         maior = vetor[x];
+       }
+
+  }
+  
+  for(x = 1; x<=10; x++)
+    {
+       if(menor > vetor[x] )
+       {
+         menor = vetor[x];
+       }
+
+  }
+   for(x=0;x<=10; x++)
+  {
+    soma = soma + vetor[x];
+  }
+for(x = 0; x<=n; x ++)
+{
+  if(vetor[x] < 0 )
+  {
+       negativos++;
+  }
+}
+for(x = 0; x<=n; x ++)
+{
+  if(vetor[x] >  0 )
+  {
+       positivos ++;
+  }
+}
+
+resn = negativos/ n * 100;
+resp = postivos / n * 100;
+ 
+
+  media = soma / n;
+
+System.out.println("o menor valor é  "  + menor);
+System.out.println("a media dos valores é  "  + media);
+  System.out.println("a somas dos valores é "  + soma);
+ System.out.println("o valor maior é "  + maior);
+  System.out.println("o porcentual de numeros negativos é de  "  + negativos);
+    System.out.println("o porcentual de numeros negativos é de  "  + positivos);
+}
+}

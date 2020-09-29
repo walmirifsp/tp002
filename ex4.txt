@@ -1,0 +1,29 @@
+
+ import java.util.Scanner;
+class Main {
+  
+ 
+  public static void main(String[] args) {
+  int t[][] = new int [2][3];
+  int x , y;
+ 
+ t[0][0] = 1;
+ t[0][1] = 2;
+ t[0][2] = 3;
+ t[1][0] = 4;
+ t[1][1] = 5;
+ t[1][2] = 6;
+
+ System.out.println(t[0][0]); 
+       System.out.println(t[0][1]);
+       System.out.println(t[0][2]);
+       System.out.println(t[1][0]);
+       System.out.println(t[1][1]);
+       System.out.println(t[1][2]);
+  
+      
+  
+
+}
+}
+   

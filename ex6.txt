@@ -1,0 +1,21 @@
+class Main {
+  public static void main(String[] args) {
+     String t[][] = new String [2][3];
+
+     
+ t[0][0] = "marea pegou fogo";
+ t[0][1] = "golf ta na oficina";
+ t[0][2] = "palio o carro mais sem graça do brasil";
+ t[1][0] = "gol bolinha";
+ t[1][1] = " fusca";
+ t[1][2] = "jetta";
+ 
+ System.out.println(t[0][0]);
+       System.out.println(t[0][1]);
+       System.out.println(t[0][2]);
+       System.out.println(t[1][1]);
+       System.out.println(t[1][2]);
+  
+     
+    }
+}

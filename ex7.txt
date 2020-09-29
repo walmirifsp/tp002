@@ -1,0 +1,61 @@
+ import java.util.Scanner;
+ import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+ 
+ int n= 12;
+ int x , y;
+  int vetor[] = new int[n];
+  int m[][] = new int[3][4];
+  int v;
+  Scanner ler = new Scanner(System.in);
+    for(x =0; x< n; x++)
+        {
+          System.out.println("digite o valor  " );
+          vetor[x] = ler.nextInt();
+        } 
+
+        for (x = 0; x < m.length; x++)
+          {
+          
+      for ( y = 0; y < m.length; y++)
+      {
+        
+         m[x][y] = vetor[x];
+      
+  
+        
+      }
+
+         System.out.println("digite um valor para multiplicação da matriz  " );
+           v =   ler.nextInt();
+
+           for (x = 0; x < 4; x++)
+          {
+      for ( y = 0; y < 3; y++)
+      {
+        
+        m[x][y] = m[x][y] * v;
+      
+  
+        
+      }
+            for (x = 0; x < m.length; x++)
+          {
+            System.out.println("\n");
+      for ( y = 0; y < m.length; y++)
+      {
+        
+         System.out.println(m[x][y] );
+      
+  
+        
+      }
+
+          }
+
+          }
+          }
+       
+  }
+}

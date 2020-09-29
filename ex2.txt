@@ -1,0 +1,68 @@
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    int x   , maior;
+    int soma = 0;
+    int media;
+    Scanner ler = new Scanner(System.in);
+
+      int vetor[] = new int[11];
+      for(x = 1; x <=10; x++)
+      {
+        System.out.println("digite o valor");
+          vetor[x] = ler.nextInt();
+      }
+
+      maior = vetor[1];
+   
+    for(x = 1; x<=10; x++)
+    {
+       if(maior < vetor[x] )
+       {
+         maior = vetor[x];
+       }
+    }
+     System.out.println("o valor maior é "  + maior);
+   
+  for(x=0;x<=10; x++)
+  {
+    soma = soma + vetor[x];
+  }
+  
+System.out.println("a somas dos valores é "  + soma);
+media = soma / 10;
+
+System.out.println("a media dos valores é  "  + media);
+
+  }
+
+}
+
+
+
+
+
+  while(n < 0)
+  {
+        System.out.println("digite a quantidade de valores ");
+        n = ler.nextInt();
+        if(n > 20)
+        {
+          System.out.println("o valor deve ser menor que 20 ");
+          n = -1;
+        }
+        int vetor[] = new int[n];
+           maior = vetor[0];
+        for(x =0; x< n; x++)
+        {
+          System.out.println("digite o valor  " );
+          vetor[x] = ler.nextInt();
+        }
+    
+  }
+          
+        
+    
+
+   System.out.println("concluido!! " + maior);

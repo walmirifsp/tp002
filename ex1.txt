@@ -1,0 +1,23 @@
+
+ import java.util.Scanner;
+class Main {
+  
+  public static void main(String[] args) {
+    int valor1 = 1;
+    int valor2 = 0;
+     Scanner ler = new Scanner(System.in);     
+     
+  System.out.println("digite o valor1");
+  valor1 = ler.nextInt();
+
+  while(valor1 > valor2)
+  {
+        System.out.println("digite o valor2 lembrando que dever ser maior que o 1");
+        valor2 = ler.nextInt();
+  }
+    
+   System.out.println("concluido!! " + valor2);
+
+
+  }
+}
